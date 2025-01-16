@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ema_react_app/static/css/main.3ab0bf91.css",
+    "main.js": "/ema_react_app/static/js/main.715329c0.js",
+    "index.html": "/ema_react_app/index.html",
+    "main.3ab0bf91.css.map": "/ema_react_app/static/css/main.3ab0bf91.css.map",
+    "main.715329c0.js.map": "/ema_react_app/static/js/main.715329c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ab0bf91.css",
+    "static/js/main.715329c0.js"
+  ]
+}
