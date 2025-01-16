@@ -18,7 +18,7 @@ const App = () => {
     const pieceURL = urlParams.get("pieceURL");
     const emaExpression = urlParams.get("ema_expression");
     const fileName = pieceURL.split('/').pop();
-    const newPieceURL = 'https://raw.githubusercontent.com/eleon024/ema_react_app/main/Music_Files/'+fileName;
+    const newPieceURL = 'https://raw.githubusercontent.com/RichardFreedman/ema_react_app/main/Music_Files/'+fileName;
     // const measure_range = JSON.parse(decodeURIComponent(urlParams.get("measure_range")));
     const measure_range = urlParams.get("measure_range");
     const observation = urlParams.get("observation");
