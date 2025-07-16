@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RichardFreedman/ema_react_app/static/css/main.3ab0bf91.css",
-    "main.js": "/RichardFreedman/ema_react_app/static/js/main.c90db5d9.js",
-    "index.html": "/RichardFreedman/ema_react_app/index.html",
-    "main.3ab0bf91.css.map": "/RichardFreedman/ema_react_app/static/css/main.3ab0bf91.css.map",
-    "main.c90db5d9.js.map": "/RichardFreedman/ema_react_app/static/js/main.c90db5d9.js.map"
+    "main.css": "/ema_react_app/static/css/main.3ab0bf91.css",
+    "main.js": "/ema_react_app/static/js/main.b0e228db.js",
+    "index.html": "/ema_react_app/index.html",
+    "main.3ab0bf91.css.map": "/ema_react_app/static/css/main.3ab0bf91.css.map",
+    "main.b0e228db.js.map": "/ema_react_app/static/js/main.b0e228db.js.map"
   },
   "entrypoints": [
     "static/css/main.3ab0bf91.css",
-    "static/js/main.c90db5d9.js"
+    "static/js/main.b0e228db.js"
   ]
 }
