@@ -13,7 +13,7 @@ The CRIM Intervals Highlighter React App is a cutting-edge web application desig
 ## Example Usage
 ![Example Usage in Jupyter or Colab Notebook](images/example_usage_in_NB.png)
 ![Example Output of Rendering](images/example_output.png)
-[Example link](https://cwcross.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0002_2.mei&ema_expression=%2F4-5%2F3%2B5%2C3%2B5%2F%402-4%2B%402-all%2C%401%2B%401%2Fhighlight&measure_range=4-5&observation=%20FUGA)
+[Example link](https://RichardFreedman.github.io/ema_react_app/?pieceURL=https%3A%2F%2Fcrimproject.org%2Fmei%2FCRIM_Mass_0002_2.mei&ema_expression=%2F4-5%2F3%2B5%2C3%2B5%2F%402-4%2B%402-all%2C%401%2B%401%2Fhighlight&measure_range=4-5&observation=%20FUGA)
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ You'll need the following installed on your system:
 
 1. Clone the repository:
 ```
-git clone https://github.com/cwcross/ema_react_app.git
+git clone https://github.com/RichardFreedman/ema_react_app.git
 ```
 
 2. Navigate to the project directory:
