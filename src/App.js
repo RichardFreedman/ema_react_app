@@ -25,8 +25,9 @@ const App = () => {
     verovio.module.onRuntimeInitialized = async () => {
       const tk = new verovio.toolkit();
       tk.setOptions({
-        scale: 50,
-        adjustPageWidth: true,
+        'scale': 30,
+        'adjustPageWidth': True,
+        'adjustPageHeight': True, 
       });
 
 
