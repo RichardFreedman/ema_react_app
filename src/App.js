@@ -34,7 +34,7 @@ const App = () => {
           pageWidth: 3000,        // Force a much wider page
           adjustPageWidth: false, // Turn OFF auto-width so it uses our pageWidth
           adjustPageHeight: true, // Keep auto-height
-          svgViewBox: true        // For responsive scaling
+          svgViewBox: false        // For responsive scaling
       });
 
 
