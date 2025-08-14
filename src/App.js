@@ -29,25 +29,12 @@ const App = () => {
       //   adjustPageWidth: true,
       //   adjustPageHeight: true, 
       // });
-      tk.setOptions({
-        // Keep your original scale or go smaller
-          scale: 25,              // Smaller than your original 30%
-          
-          // DON'T set pageWidth/pageHeight - let adjustPageWidth work
-          adjustPageWidth: true,
-          adjustPageHeight: true,
-          
-          // Just add spacing reductions to fit more music
-          spacingStaff: 6,        // Tighter staff spacing
-          spacingSystem: 8,       // Tighter system spacing  
-          spacingLinear: 0.15,    // Less horizontal spacing
-          
-          // Optional: smaller margins
-          pageMarginLeft: 30,
-          pageMarginRight: 30,
-          
-          // This is fine to keep
-          svgViewBox: true
+        tk.setOptions({
+          scale: 15,              // Keep your small music size
+          pageWidth: 3000,        // Force a much wider page
+          adjustPageWidth: false, // Turn OFF auto-width so it uses our pageWidth
+          adjustPageHeight: true, // Keep auto-height
+          svgViewBox: true        // For responsive scaling
       });
 
 
