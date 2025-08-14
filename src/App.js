@@ -30,9 +30,9 @@ const App = () => {
       //   adjustPageHeight: true, 
       // });
         tk.setOptions({
-          scale: 15,              // Keep your small music size
+          scale: 30,              // Keep your small music size
           pageWidth: 3000,        // Force a much wider page
-          adjustPageWidth: false, // Turn OFF auto-width so it uses our pageWidth
+          adjustPageWidth: true, // Turn OFF auto-width so it uses our pageWidth
           adjustPageHeight: true, // Keep auto-height
           svgViewBox: false        // For responsive scaling
       });
