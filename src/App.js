@@ -24,10 +24,45 @@ const App = () => {
     const observation = urlParams.get("observation");
     verovio.module.onRuntimeInitialized = async () => {
       const tk = new verovio.toolkit();
+      // tk.setOptions({
+      //   scale: 30,
+      //   adjustPageWidth: true,
+      //   adjustPageHeight: true, 
+      // });
       tk.setOptions({
-        scale: 30,
-        adjustPageWidth: true,
-        adjustPageHeight: true, 
+          // Page dimensions - much wider than default
+          pageWidth: 3000,        // Increased from default 2100
+          pageHeight: 2000,       // Slightly reduced height for wider aspect ratio
+          
+          // Use scaleToPageSize for better control
+          scaleToPageSize: true,
+          scale: 40,              // Slightly larger than your original 30%
+          
+          // Layout adjustments
+          landscape: true,        // Enable landscape orientation
+          adjustPageWidth: true,
+          adjustPageHeight: true,
+          
+          // Spacing optimizations to fit more music
+          spacingStaff: 8,        // Reduced from default 12
+          spacingSystem: 10,      // Reduced from default 12
+          spacingLinear: 0.20,    // Reduced from default 0.25
+          spacingNonLinear: 0.55, // Slightly reduced from default 0.6
+          
+          // Smaller staff size for more content
+          unit: 7.5,              // Reduced from default 9.0 (see raster table)
+          
+          // Margin adjustments
+          pageMarginLeft: 30,     // Reduced from default 50
+          pageMarginRight: 30,
+          pageMarginTop: 40,
+          pageMarginBottom: 40,
+          
+          // Vertical justification for better page filling
+          justifyVertically: true,
+          
+          // Optional: Enable SVG viewBox for responsive scaling
+          svgViewBox: true
       });
 
 
