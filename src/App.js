@@ -30,33 +30,23 @@ const App = () => {
       //   adjustPageHeight: true, 
       // });
       tk.setOptions({
-          // Keep your original small scale or go even smaller
-          scale: 25,              // Even smaller than your original 30%
+        // Keep your original scale or go smaller
+          scale: 25,              // Smaller than your original 30%
           
-          // Wide page dimensions
-          pageWidth: 3000,
-          pageHeight: 2000,
-          
-          // Much smaller staff size for tiny music
-          unit: 5.0,              // Very small (your original was probably default 9.0)
-          
-          // Aggressive spacing reduction
-          spacingStaff: 4,        // Very tight staff spacing
-          spacingSystem: 6,       // Very tight system spacing
-          spacingLinear: 0.10,    // Minimal horizontal spacing
-          spacingNonLinear: 0.40, // Reduced non-linear spacing
-          
-          // Minimal margins to maximize content area
-          pageMarginLeft: 15,
-          pageMarginRight: 15,
-          pageMarginTop: 20,
-          pageMarginBottom: 20,
-          
-          // Layout options
-          landscape: true,
+          // DON'T set pageWidth/pageHeight - let adjustPageWidth work
           adjustPageWidth: true,
           adjustPageHeight: true,
-          justifyVertically: true,
+          
+          // Just add spacing reductions to fit more music
+          spacingStaff: 6,        // Tighter staff spacing
+          spacingSystem: 8,       // Tighter system spacing  
+          spacingLinear: 0.15,    // Less horizontal spacing
+          
+          // Optional: smaller margins
+          pageMarginLeft: 30,
+          pageMarginRight: 30,
+          
+          // This is fine to keep
           svgViewBox: true
       });
 
