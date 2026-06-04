@@ -46,7 +46,10 @@ const App = () => {
           pageWidth: 3000,
           adjustPageWidth: true,
           adjustPageHeight: true,
-          svgViewBox: false
+          svgViewBox: false,
+          spacingSystem: 12,
+          lyricTopMinMargin: 4,
+          lyricSize: 45
       });
 
 
