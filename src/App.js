@@ -4,6 +4,21 @@ import verovio from "verovio";
 import EmaMei from "./ema-mei.js";
 import "./styles.css";
 
+function countMeasures(rangeStr) {
+  if (!rangeStr) return 4;
+  return rangeStr.split(",").reduce((total, segment) => {
+    const parts = segment.trim().split("-");
+    return parts.length === 2
+      ? total + (parseInt(parts[1], 10) - parseInt(parts[0], 10) + 1)
+      : total + 1;
+  }, 0);
+}
+
+function scaleForMeasureCount(count) {
+  // Larger scale for fewer measures, smaller for many; range 20–45
+  return Math.max(20, Math.min(45, Math.round(120 / Math.max(1, count))));
+}
+
 const App = () => {
   const [svgContent, setSvgContent] = useState("");
   const [title, setTitle] = useState("");
@@ -24,17 +39,14 @@ const App = () => {
     const observation = urlParams.get("observation");
     verovio.module.onRuntimeInitialized = async () => {
       const tk = new verovio.toolkit();
-      // tk.setOptions({
-      //   scale: 30,
-      //   adjustPageWidth: true,
-      //   adjustPageHeight: true, 
-      // });
+      const measureCount = countMeasures(measure_range);
+      const scale = scaleForMeasureCount(measureCount);
         tk.setOptions({
-          scale: 30,              // Keep your small music size
-          pageWidth: 3000,        // Force a much wider page
-          adjustPageWidth: true, // Turn OFF auto-width so it uses our pageWidth
-          adjustPageHeight: true, // Keep auto-height
-          svgViewBox: false        // For responsive scaling
+          scale,
+          pageWidth: 3000,
+          adjustPageWidth: true,
+          adjustPageHeight: true,
+          svgViewBox: false
       });
 
 
